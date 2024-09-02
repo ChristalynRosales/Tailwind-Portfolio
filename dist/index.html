@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="output.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-padding-top: 80px; 
+        }
+
+    </style>
+</head>
+<body>
+    <header class="sticky top-0 z-50 text-white bg-black">
+        <div class="container flex items-center justify-between py-4 mx-auto">
+        <h1 class="text-4xl font-bold">My<span class="w-full text-red-600"> Portfolio</span></h1>
+
+        <nav class="ml-auto">
+            <ul class="flex space-x-4">
+                <li><a href="#home" class="hover:text-red-500">Home</a></li>
+                <li><a href="#projects" class="hover:text-red-500">Projects</a></li>
+                <li><a href="#skills" class="hover:text-red-500">Skills</a></li>
+                <li><a href="#contact" class="hover:text-red-500">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <!-------------------------------------------HOME-------------------------------------------------------------->
+    <main class="py-4 bg-gradient-to-r from-pink-50 via-red-50 to-pink-100">
+        <section id="home" class="flex flex-col items-center px-4 pt-20 my-8 space-y-6 md:flex-row md:space-y-0 md:space-x-6">
+            <div class="flex-shrink-0 mt-6 animate-fade-in">
+                <img src="../images/Profpic.png" alt="Profile Picture" class="object-cover ml-20 transition-transform duration-500 transform border-4 border-red-400 rounded-full shadow-2xl w-80 h-80 md:w-80 md:h-80 hover:scale-105">
+            </div>
+            <div class="flex-1">
+                <h1 class="mb-2 text-3xl font-bold">Christalyn <span class="w-full text-red-600"> Rosales</span></h1>
+                <h2 class="mb-2 text-2xl font-semibold">Web Developer</h2>
+                <p class="mb-6">I'm a BSIT student with a passion for technology and web development. While I'm still gaining experience, I'm eager to learn and grow in the field. Through my studies and personal projects, I've been developing my skills and exploring various aspects of web development. I'm excited to take on new challenges and continue expanding my knowledge in the tech industry. Let's connect and explore how we can collaborate on innovative projects!</p>
+                <a href="../main/christalyn_cv.pdf" download="christalyn_cv.pdf" class="inline-block px-4 py-2 mt-6 text-white bg-red-600 rounded hover:bg-red-400">Download CV</a>
+            </div>
+        </section>
+
+        <!------------------------------------------PROJECTS-------------------------------------------------------------->
+
+        <section id="projects" class="px-4 pt-20 my-24 bg-gradient-to-r from-red-50 via-white to-red-100">
+            <h2 class="mb-6 text-4xl font-bold text-center text-gray-800">Pro<span class="w-full text-red-600">jects</span></h2>
+
+            <div class="flex flex-col items-center mb-8 space-y-6 md:flex-row md:space-y-0 md:space-x-6 ">
+                <div class="flex-shrink-0 animate-fade-in">
+                    <img src="../images/Consult.png" alt="Appointment System" class="object-contain transition-transform duration-500 transform border-2 border-red-400 rounded shadow-lg w-60 h-60 hover:scale-105 hover:rotate-3">
+                </div>
+                <div class="flex-1">
+                    <h3 class="mb-2 text-2xl font-semibold text-gray-800">Appointment System using Angular, PHP, REST API</h3>
+                    <p class="text-gray-600">This project is an Appointment System developed using Angular for the frontend, PHP for the backend, and a REST API for communication. It includes features like booking appointments, managing schedules, and user authentication. The system supports administrative, instructor, and student appointments and includes a queuing system to avoid lines.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center space-y-6 md:flex-row md:space-y-0 md:space-x-6">
+                <div class="flex-shrink-0 animate-fade-in">
+                    <img src="../images/Gallery.png" alt="Image Gallery" class="object-contain transition-transform duration-500 transform border-2 border-red-400 rounded shadow-lg w-60 h-60 hover:scale-105 hover:rotate-3">
+                </div>
+                <div class="flex-1">
+                    <h3 class="mb-2 text-2xl font-semibold text-gray-800">Image Gallery with User Management</h3>
+                    <p class="text-gray-600">This project features an interactive image gallery built with Angular for the frontend, PHP for the backend, and a REST API for seamless data handling. Users can browse thumbnails, view full-size images, and upload their own with basic validation. Additional functionalities include image editing, filters, and commenting, all designed with a focus on enhancing user experience and ease of use.</p>
+                </div>
+            </div>
+
+            <!-------------------------------------------SKILLS-------------------------------------------------------------->
+
+            <section id="skills" class="px-4 pt-20 my-24 bg-white">
+                <h2 class="mb-6 text-4xl font-bold text-center text-gray-800">My <span class="w-full text-red-600">Skills</span></h2>
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <div class="p-6 bg-red-100 rounded-lg shadow-lg skill-card animate-fade-in">
+                        <div class="flex items-center mb-4">
+                            <div class="flex items-center justify-center w-12 h-12 mr-4 text-2xl font-bold text-white transition-transform duration-300 transform bg-red-600 rounded-full hover:scale-110">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">HTML</h3>
+                        </div>
+                        <p class="text-gray-600">Proficient in creating structured, semantic web pages with HTML, adhering to best practices for accessibility and SEO.</p>
+                    </div>
+
+                    <div class="p-6 bg-blue-100 rounded-lg shadow-lg skill-card animate-fade-in">
+                        <div class="flex items-center mb-4">
+                            <div class="flex items-center justify-center w-12 h-12 mr-4 text-2xl font-bold text-white transition-transform duration-300 transform bg-blue-600 rounded-full hover:scale-110">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">CSS</h3>
+                        </div>
+                        <p class="text-gray-600">Experienced in designing responsive and visually appealing user interfaces with CSS, including Flexbox, Grid, and animations.</p>
+                    </div>
+
+                    <div class="p-6 bg-yellow-100 rounded-lg shadow-lg skill-card animate-fade-in">
+                        <div class="flex items-center mb-4">
+                            <div class="flex items-center justify-center w-12 h-12 mr-4 text-2xl font-bold text-white transition-transform duration-300 transform bg-yellow-600 rounded-full hover:scale-110">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">JavaScript</h3>
+                        </div>
+                        <p class="text-gray-600">Skilled in JavaScript for adding interactivity and dynamic behavior to web pages, with a strong understanding of different features.</p>
+                    </div>
+
+                    <div class="p-6 bg-green-100 rounded-lg shadow-lg skill-card animate-fade-in">
+                        <div class="flex items-center mb-4">
+                            <div class="flex items-center justify-center w-12 h-12 mr-4 text-2xl font-bold text-white transition-transform duration-300 transform bg-green-600 rounded-full hover:scale-110">
+                                <i class="fab fa-angular"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Angular</h3>
+                        </div>
+                        <p class="text-gray-600">Experienced in building scalable single-page applications with Angular, utilizing TypeScript, RxJS, and Angular Material.</p>
+                    </div>
+
+                    <div class="p-6 bg-gray-100 rounded-lg shadow-lg skill-card animate-fade-in">
+                        <div class="flex items-center mb-4">
+                            <div class="flex items-center justify-center w-12 h-12 mr-4 text-2xl font-bold text-white transition-transform duration-300 transform bg-gray-600 rounded-full hover:scale-110">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">PHP</h3>
+                        </div>
+                        <p class="text-gray-600">Proficient in backend development with PHP, including creating RESTful APIs, handling database interactions, and implementing security best practices.</p>
+                    </div>
+                </div>
+        </section>
+
+        <!-------------------------------------------CONTACT-------------------------------------------------------------->
+
+        <section id="contact" class="px-4 pt-20 my-24">
+            <h2 class="mb-6 text-4xl font-bold text-center">Con<span class="w-full text-red-600">tact</span></h2>
+            <div class="mb-8 text-center">
+                <div class="flex justify-center gap-4 mb-4">
+                    <a href="https://github.com/ChristalynRosales" class="text-gray-700 hover:text-gray-900"><i class="text-2xl fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/christalynr/" class="text-gray-700 hover:text-gray-900"><i class="text-2xl fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/DarkNeko28" class="text-gray-700 hover:text-gray-900"><i class="text-2xl fa-brands fa-twitter"></i></a>
+                </div>
+                <p class="mb-2"><i class="text-red-600 fa-solid fa-location-dot"></i> Sta.Rita, Olongapo City, Philippines</p>
+                <p class="mb-2"><i class="text-red-600 fa-solid fa-phone"></i> +639397278879</p>
+                <p class="mb-4"><i class="text-red-600 fa-solid fa-envelope"></i> 200810815@gordoncollege.edu.ph</p>
+            </div>
+
+            <form action="mailto:your.email@example.com" method="post" enctype="text/plain" class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block mb-2 text-lg font-semibold">Name</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-red-600">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block mb-2 text-lg font-semibold">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-red-600">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block mb-2 text-lg font-semibold">Message</label>
+                    <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-red-600"></textarea>
+                </div>
+                <button type="submit" class="w-full px-4 py-2 text-white bg-red-600 rounded-lg hover:bg-red-400">Send Message</button>
+            </form>
+    </main>
+
+    <footer class="py-4 text-center text-white bg-black">
+        <p>&copy; 2024 Christalyn Rosales. All rights reserved.</p>
+    </footer>
+</body>
+</html>
